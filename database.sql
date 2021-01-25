@@ -1,3 +1,4 @@
+-- use MySQL or MariaDB
 CREATE DATABASE cake_cms;
 
 CREATE TABLE users (
