@@ -12,7 +12,9 @@ class ArticlesTable extends Table
     public function initialize(array $config): void
     {
         $this->addBehavior('Timestamp');
+        $this->belongsToMany('Tags'); // Add this line
     }
+
     public function beforeSave(EventInterface $event, $entity, $options)
     {
         if ($entity->isNew() && !$entity->slug) {
