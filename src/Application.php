@@ -171,6 +171,7 @@ class Application extends BaseApplication
         }
 
         $this->addPlugin('Migrations');
+        $this->addPlugin('Authorization');
 
         // Load more plugins here
     }
